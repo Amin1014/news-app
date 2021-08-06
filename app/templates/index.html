@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% block content %}
+  <!--News sources section-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Top Headlines</h3>
+        {{macro.displayNewsList(sources)}}
+      </div>
+      <div class="col-md-4">
+        <h2>Column 2</h2>
+        
+          <form>
+              <input type="text" name="news_query" placeholder="Search for news" class="form-control">
+              <input type="submit"  value="Submit" class="btn btn-success" style="margin-top: 5px;">
+          </form>
+        
+      </div>
+
+      </div>
+
+    </div>
+
+  </div>
+{% endblock %}
+  
