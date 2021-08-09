@@ -9,7 +9,7 @@ class NewsTest(unittest.TestCase):
     '''
     A setup function that will run before any test
     '''
-    self.new_news = News('ABC News', 'Your trusted source for breaking news', 'https://abcnews.go.com',
+    self.new_news = news('ABC News', 'Your trusted source for breaking news', 'https://abcnews.go.com',
     'general', 'en','country')
 
   def test_init(self):
